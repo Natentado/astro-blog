@@ -6,11 +6,6 @@ This project is a blog website built using [Astro JS](https://astro.build/), wit
 
 - [Features](#features)
 - [Technologies](#technologies)
-- [Setup](#setup)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
