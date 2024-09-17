@@ -16,6 +16,7 @@ export async function getStaticPaths() {
   //     { params: { tag: "setbacks" }, props: {posts: allPosts, id: 5} },
   //     { params: { tag: "learning in public" }, props: {posts: allPosts, id: 6} },
   // ];
+  
   return uniqueTags.map((tag) => {
     const filteredPosts = allPosts.filter((post: IBlogPost) => post.frontmatter.tags.includes(tag));
 

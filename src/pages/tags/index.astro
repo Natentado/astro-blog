@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const pageTitle: string = "Tags";
+
+const existingTags = ["astro", "successes", "community", "blogging", "setbacks", "learning in public"]
+---
+
+<BaseLayout pageTitle={pageTitle}>
+    <ul>
+        {existingTags.map(page => <li>{page}</li>)}
+    </ul>
+</BaseLayout>
