@@ -6,7 +6,7 @@ import type { IBlogPost } from '../../types';
 export async function getStaticPaths() {
   const allPosts = await Astro.glob('../posts/*.md') as any;
 
-  const uniqueTags: Array<string> = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())] as Array<string>;
+  const uniqueTags: Array<string> = [...new Set(allPosts.map((post: IBlogPost) => post.frontmatter.tags).flat())] as Array<string>;
   
   // return [
   //     { params: { tag: "astro" }, props: {posts: allPosts, id: 1} },
